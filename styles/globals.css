@@ -1,5 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 html,
 body {
   background-color: #282c34;
   color: white;
+}
+
+.container {
+  position: absolute;
+  top: 5%;
+}
+
+.navMenu {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+  border-bottom: 2px #fddb3a solid;
 }

@@ -1,11 +1,11 @@
+import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Head from "next/head";
 
-export default function about(){
-    return(
+export default function Work() {
+    return (
         <div>
             <Head>
-                <title>About - Laurin</title>
+                <title>Projects - Laurin</title>
             </Head>
             <Navbar />
             <div className="container">
