@@ -6,10 +6,11 @@ export default function about(){
         <div>
             <Head>
                 <title>About - Laurin</title>
+                <link rel="icon" type="image/png" href="/logosmall.png" />
             </Head>
             <Navbar />
-            <div className="container">
-                <h1>Lorem Ipsum</h1>
+            <div>
+                <h1>Lorem Ipsum about</h1>
             </div>
         </div>
     );

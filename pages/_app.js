@@ -1,12 +1,11 @@
-import '@styles/globals.css'
-import { Inter } from 'next/font/google'
+import 'bootstrap/dist/css/bootstrap.css'
+import '@styles/globals.css';
+import {useEffect} from "react";
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function MyApp({ Component, pageProps }) {
-  return (
-      <main className={inter.className}>
-        <Component {...pageProps} />
-      </main>
-  )
+    useEffect(() => {
+        import("bootstrap/dist/js/bootstrap");
+    }, []);
+    return <Component {...pageProps} />
 }
