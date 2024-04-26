@@ -1,7 +1,19 @@
-import {useRouter} from 'next/router';
+import { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
     const router = useRouter();
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     const getPageName = () => {
         if (router.pathname === '/projects') {
             return 'Projects';
@@ -23,22 +35,25 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-sm bg-transparent navbar-dark justify-content-center">
             <div className="container-fluid">
                 <span className="d-sm-none fs-3 fw-bold">{getPageName()}</span>
-                <div className="ms-auto">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsibleNavbar">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div className="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Home</a>
+                <button className="border-0 navbar-toggler" type="button" onClick={toggleMenu}>
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className={`collapse navbar-collapse justify-content-center ${isMenuOpen ? 'show' : ''}`}>
+                    <ul className="navbar-nav" onClick={closeMenu}>
+                        <li className={`nav-item ${router.pathname === '/' ? 'active' : ''}`}>
+                            <Link href="/">
+                                <p className="nav-link">Home</p>
+                            </Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/projects">Projects</a>
+                        <li className={`nav-item ${router.pathname === '/projects' ? 'active' : ''}`}>
+                            <Link href="/projects">
+                                <p className="nav-link">Projects</p>
+                            </Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/about">About</a>
+                        <li className={`nav-item ${router.pathname === '/about' ? 'active' : ''}`}>
+                            <Link href="/about">
+                                <p className="nav-link">About</p>
+                            </Link>
                         </li>
                     </ul>
                 </div>
