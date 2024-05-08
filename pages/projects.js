@@ -48,7 +48,7 @@ export default function Projects() {
                 </div>
 
                 <div className="container mt-3">
-                    <h2>Weather RestAPI</h2>
+                    <h2>App</h2>
                     <div className="card border-0">
                         <div className="card-body bg-dark text-white">
                             <p>Tracker App</p>
