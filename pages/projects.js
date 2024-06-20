@@ -15,8 +15,8 @@ export default function Projects() {
                     <h2>Weather RestAPI</h2>
                     <div className="card border-0">
                         <div className="card-body bg-dark text-white">
-                            <p>Ein kleines Projekt das von mir im 3. Jahrgang programmiert wurde.</p>
-                            <Link href="/projects/basicJS/weather-restapi">
+                            <p>Javascript fetch von einer RestAPI mit Wetter Daten</p>
+                            <Link href="/projects/js/weather-restapi">
                                 View Details
                             </Link>
                         </div>
@@ -27,8 +27,8 @@ export default function Projects() {
                     <h2>Product RestAPI</h2>
                     <div className="card border-0">
                         <div className="card-body bg-dark text-white">
-                            <p>Ein kleines Projekt das von mir im 3. Jahrgang programmiert wurde.</p>
-                            <Link href="/projects/basicJS/product-restapi">
+                            <p>Javascript fetch von einer RestAPI mit verschiedenen Produkten.</p>
+                            <Link href="/projects/js/product-restapi">
                                 View Details
                             </Link>
                         </div>
@@ -39,8 +39,20 @@ export default function Projects() {
                     <h2>Tank Game</h2>
                     <div className="card border-0">
                         <div className="card-body bg-dark text-white">
-                            <p>Ein kleines Projekt das von mir im 3. Jahrgang programmiert wurde.</p>
-                            <Link href="/projects/basicJS/tank-game">
+                            <p>Javascript Spiel</p>
+                            <Link href="/projects/js/tank-game">
+                                View Details
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container mt-3">
+                    <h2>App</h2>
+                    <div className="card border-0">
+                        <div className="card-body bg-dark text-white">
+                            <p>Tracker App</p>
+                            <Link href="/projects/app/rate-right-light">
                                 View Details
                             </Link>
                         </div>
