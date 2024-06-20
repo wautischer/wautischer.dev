@@ -18,7 +18,7 @@ export default function Rateright() {
                                 <button
                                     className="btn btn-primary bg-dark border-0"
                                     onClick={() => {
-                                        window.location.href = 'mailto:recipient@example.com';
+                                        window.location.href = 'mailto:peter.gigler@htl-klu.at';
                                     }}
                                 >peter.gigler@htl-klu.at
                                 </button>
@@ -32,7 +32,7 @@ export default function Rateright() {
                                 <button
                                     className="btn btn-primary bg-dark border-0"
                                     onClick={() => {
-                                        window.location.href = 'mailto:recipient@example.com';
+                                        window.location.href = 'mailto:stefan.schaar@edu.htl-klu.at';
                                     }}
                                 >stefan.schaar@edu.htl-klu.at
                                 </button>
@@ -46,7 +46,7 @@ export default function Rateright() {
                                 <button
                                     className="btn btn-primary bg-dark border-0"
                                     onClick={() => {
-                                        window.location.href = 'mailto:recipient@example.com';
+                                        window.location.href = 'mailto:laurin.wautischer@edu.htl-klu.at';
                                     }}
                                 >laurin.wautischer@edu.htl-klu.at
                                 </button>
